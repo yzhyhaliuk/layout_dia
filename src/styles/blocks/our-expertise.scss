@@ -1,0 +1,74 @@
+.our-expertise {
+  background-color: $white-color;
+  border-radius: 30px;
+  padding-block: 72px;
+
+
+
+
+  &__title {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 52.8px;
+    color: $dark-font-color;
+    margin-bottom: 56px;
+
+  }
+
+  &__cards {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 2 / -2;
+    }
+
+    @include on-small-desktop {
+      display: flex;
+      justify-content: space-between;
+      gap: 137px;
+    }
+  }
+
+  &__card {
+    margin-bottom: 56px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    justify-items: center;
+
+    @include hover(transform, scale(1.2));
+
+  }
+
+
+  &__subtitle {
+    margin: 0;
+    margin-top: 32px;
+    color: $dark-font-color;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+
+  }
+
+  &__info {
+    margin: 0;
+    margin-top: 16px;
+    font-family: OpenSans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: $light-font-color;
+
+  }
+
+
+}
