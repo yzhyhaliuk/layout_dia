@@ -30,7 +30,6 @@
     @include on-small-desktop {
       line-height: 78px;
     }
-
   }
 
   &__info {
@@ -48,7 +47,6 @@
       font-size: 24px;
       line-height: 36px;
     }
-
   }
 
   &__button {
@@ -78,6 +76,5 @@
     @include on-tablet {
       width: 264px;
     }
-
   }
 }
